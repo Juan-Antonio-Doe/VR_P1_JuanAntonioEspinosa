@@ -8,15 +8,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - 0
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 1
+  - 2
+  - Direct Drag
+  - 4
+  - 5
+  - 6
   - 
   - 
   - 

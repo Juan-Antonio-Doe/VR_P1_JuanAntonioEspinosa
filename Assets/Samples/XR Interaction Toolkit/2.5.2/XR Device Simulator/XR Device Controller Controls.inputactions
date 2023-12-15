@@ -335,6 +335,17 @@
                 },
                 {
                     "name": "",
+                    "id": "dcaab541-a64a-4720-98da-9f9c5f03d5c1",
+                    "path": "<XRController>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Secondary Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "45511393-aa9b-4031-8e31-4eec53ab2d3f",
                     "path": "<Keyboard>/m",
                     "interactions": "",
