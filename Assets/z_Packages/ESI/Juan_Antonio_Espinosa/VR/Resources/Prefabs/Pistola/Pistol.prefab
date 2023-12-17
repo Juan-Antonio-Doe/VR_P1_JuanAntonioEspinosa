@@ -227,8 +227,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ShowInteractableHoverMeshes: 1
-  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: 5a07915a45f17cb4fb6324d02535c1c5,
-    type: 2}
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: 5a07915a45f17cb4fb6324d02535c1c5, type: 2}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
   m_SocketActive: 1
   m_InteractableHoverScale: 1
@@ -289,11 +288,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a39cb1dba9a82d4faa694bafc6a90d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 214705555627481062, guid: 741f63e3345de9c458d41a4188f65863,
-    type: 3}
+  bulletPrefab: {fileID: 8706279663317410941, guid: 741f63e3345de9c458d41a4188f65863, type: 3}
   bulletSpawnPoint: {fileID: 5030340629407485155}
-  bulletSpeed: 20
+  bulletSpeed: 40
   ammoCtrl: {fileID: 218593947874382428}
+  <unlimitedAmmo>k__BackingField: 1
 --- !u!65 &4439643059927325830
 BoxCollider:
   m_ObjectHideFlags: 0

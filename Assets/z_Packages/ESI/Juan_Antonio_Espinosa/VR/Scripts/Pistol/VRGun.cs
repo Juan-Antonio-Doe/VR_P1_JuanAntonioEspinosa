@@ -4,31 +4,27 @@ using UnityEngine;
 
 public class VRGun : MonoBehaviour {
 
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private float bulletSpeed = 20f;
 
     [SerializeField] private AmmoController ammoCtrl;
-	
-    void Start() {
-        
-    }
 
-    void Update() {
-        
-    }
+    [field: SerializeField] private bool unlimitedAmmo { get; set; }
 
     public void Disparar() {
 
-        if (!ammoCtrl.isCharged || !ammoCtrl.ammoLeft)
-            return;
+        if (!unlimitedAmmo) {
+            if (!ammoCtrl.isCharged || !ammoCtrl.ammoLeft)
+                return;
 
-        ammoCtrl.ReduceAmmo();
+            ammoCtrl.ReduceAmmo();
+        }
 
-        GameObject spawnedBullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        Rigidbody spawnedBullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
 
-        spawnedBullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
+        spawnedBullet.AddForce(bulletSpawnPoint.forward * bulletSpeed, ForceMode.Impulse);
         
-        Destroy(spawnedBullet, 3f);
+        Destroy(spawnedBullet.gameObject, 3f);
     }
 }
